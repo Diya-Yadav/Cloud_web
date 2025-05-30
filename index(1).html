@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flavors Bistro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fffaf0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #B22222;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #8B0000;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #600000;
+    }
+
+    .hero {
+      background: url('https://source.unsplash.com/1600x700/?restaurant,food') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      max-width: 600px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .menu-preview {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .dish {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .dish:hover {
+      transform: scale(1.05);
+    }
+
+    .dish img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .testimonials {
+      background-color: #fdf5e6;
+      padding: 60px 20px;
+    }
+
+    .testimonial {
+      margin: 20px auto;
+      font-style: italic;
+      color: #555;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+
+      .dish {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Flavors Bistro</h1>
+    <p>Where Every Bite Tells a Story</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to Flavors Bistro – Taste the Difference</h2>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Flavors Bistro, we bring you a blend of traditional flavors and modern cuisine. Whether you're here for a quick bite or a three-course experience, our passion for food and service is always at the heart of everything we do.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu Highlights</h2>
+    <div class="menu-preview">
+      <div class="dish">
+        <img src="https://source.unsplash.com/300x200/?steak" alt="Grilled Steak">
+        <h3>Grilled Steak</h3>
+        <p>Juicy, tender steak grilled to perfection with herb butter.</p>
+      </div>
+      <div class="dish">
+        <img src="https://source.unsplash.com/300x200/?pasta" alt="Pasta">
+        <h3>Truffle Alfredo Pasta</h3>
+        <p>Creamy Alfredo pasta infused with black truffle essence.</p>
+      </div>
+      <div class="dish">
+        <img src="https://source.unsplash.com/300x200/?dessert" alt="Dessert">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm and rich, with a gooey center and a scoop of vanilla ice cream.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p class="testimonial">"Absolutely loved the food and ambiance! A must-visit in town." – Priya S.</p>
+    <p class="testimonial">"Their truffle pasta is heavenly. Friendly staff too!" – Arjun M.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 456 Gourmet Lane, Food City</p>
+    <p>📞 (555) 123-4567</p>
+    <p>📧 contact@flavorsbistro.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Flavors Bistro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
